@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MakeBelieve Cinema</title>
+
+  <!-- CSS SHEETS -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  
+  <!-- JAVASCRIPT & JQUERY -->
+  <script src="javascript/jquery.js"></script> 
+
+  <!-- ANGULAR -->
+  <script src="angular/angular.min.js"></script>
+  <script src="angular/apps/movieapp.js"></script>
+
+  <!-- FONTAWESOME CDN -->
+  <script src="https://kit.fontawesome.com/df81ab7113.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div id="logo">
+        <p>MAKE<span>Believe</span> Cinema</p>
+      </div>
+
+      <div id="nav-item-wrapper">
+        <div class="nav-item">
+          <a href="">Showings</a>
+        </div>
+        <div class="nav-item">
+          <a href="">Locations</a>
+        </div>
+        <div class="nav-item">
+          <a href="">Coming Soon</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  
+  <!-- MAIN -->
+  <div id="container">
+    <div id="carousel-wrapper">
+      <div id="carousel-inner">
+        <div>
+          <img src="images/cinema-seats.jpg" id="img1" class="active" alt="image showing cinema chairs and popcorn">
+          <h1>Take a Seat.</h1>
+        </div>
+        <div>
+          <img src="images/cinema-screen.jpg" id="img2" alt="image showing a cinema screen">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <h2>Movie Showings</h2>
+  </div>
+  <!--MOVIE SHOWINGS APP-->
+  <div id="showings-container" ng-app="movieApp">
+    <div ng-controller="MovieAppController">
+
+      <div class="movie-showing" ng-repeat="movie in movies">
+          <img class="movie-img" ng-src="{{movie.poster}}">
+          <div class="movie-info">
+            <h2 class="movie-name">{{movie.name}}</h2>
+            <p class="movie-desc">{{movie.description}}</p>
+            <span class="age-rating">{{movie.age}}</span> 
+            <span class="runtime">{{movie.runtime}}</span> 
+          </div>
+      </div>
+      
+    </div>
+  </div>
+    
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links"></div>
+    <div class="footer-links">
+      <h3>ABOUT US</h3>
+      <a href="">Corporate Experiences</a>
+      <a href="">Careers</a>
+      <a href="">Working Regulations</a>
+      <a href="">Media Office</a>
+    </div>
+    <div class="footer-links">
+      <h3>LEGAL</h3>
+      <a href="">Privacy Policy</a>
+      <a href="">Advertising Policy</a>
+      <a href="">Data Protection</a>
+      <a href="">Allergen Policy</a>
+      <a href="">Accessibility</a>
+    </div>
+    <div class="footer-links">
+      <h3>GET IN TOUCH</h3>
+      <a href="">Feedback Page</a>
+    </div>
+    <div class="footer-links">
+      <h3>SOCIAL</h3>
+      <a href=""><i class="fab fa-instagram"></i>Instagram</a>
+      <a href=""><i class="fab fa-facebook"></i>Facebook</a>
+      <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
+      <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
+    </div>
+    <div class="footer-links"></div>
+  </footer>
+
+  
+  <script src="javascript/index.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,202 @@
+/* CSS STYLESHEET FOR INDEX.HTML */
+
+/* GOOGLE FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+nav {
+	padding: 15px 0px 15px 30px;
+	border-bottom: 1px solid #FF6EC7;
+	display: flex;
+	width: 100%;
+	background-color: #201e1f;
+
+}
+
+#logo {
+	border: 2px solid #FF6EC7;
+	width: 125px;
+	text-align: center;
+	padding: 5px 0px;
+
+}
+
+#logo > p {
+	margin-bottom: 0;
+	color: #FF6EC7;
+	font-family: 'Stick No Bills', sans-serif;
+}
+
+#nav-item-wrapper {
+	display: flex;
+	width: 80%;
+	padding: 10px;
+	justify-content: space-evenly;
+	margin: 0 auto;
+
+}
+
+.nav-item {
+	font-size: 21px;
+	font-family: 'Kanit', sans-serif;
+	
+	
+}
+
+a {
+	text-decoration: none;
+	color: #FF6EC7;
+}
+
+a:hover {
+	color: white;
+	transition: 0.3s;
+	text-decoration: underline;
+}
+
+
+#container {
+	width: 100%;
+	padding-top: 30px;
+	background-color: #201e1f;
+}
+
+#carousel-wrapper {
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	
+}
+
+#carousel-inner {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	
+}
+
+img {
+	height: 75vh;
+	width: 95%;
+	border-right: 2px solid #FF6EC7;
+	border-left: 2px solid #FF6EC7;
+
+	
+}
+
+
+h1 {
+	margin-top: -290px;
+	color: white;
+	font-family: 'Red Hat Display', sans-serif;
+	letter-spacing: 4px;
+
+
+}
+
+
+#carousel-inner > div {
+	position: absolute;
+	top: 10px; 
+	left: 10px; 
+	right: 10px; 
+	bottom: 10px;
+}
+
+.section-header {
+	width: 100%;
+	text-align: left;
+	background-color: #201e1f;
+	padding: 0px 0px 50px 100px;
+	
+}
+
+.section-header h2 {
+	color: white;
+	padding: 5px;
+	text-decoration: underline;
+	text-decoration-color: #FF6EC7;
+	font-family: 'Work Sans', sans-serif;
+}
+
+
+
+#showings-container {
+	width: 100%;
+	background-color: #201e1f;
+}
+
+.movie-showing {
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	margin: 0 auto;
+	border-bottom: 1px solid white;
+	margin-bottom: 100px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.movie-showing:last-child {
+	margin-bottom: 0px;
+	border-bottom: none;
+	padding-bottom: 100px;
+}
+
+.movie-img {
+	width: 235px;
+	height: 320px;
+	border: none;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 15px 1px white;
+}
+
+.movie-name {
+	padding: 40px 0px 20px 40px;
+}
+
+.movie-desc {
+	padding: 10px 0px 10px 40px;
+}
+
+.age-rating {
+	padding: 10px 0px 0px 40px;
+}
+
+.runtime {
+	padding: 10px;
+}
+
+footer {
+	display: flex;
+	width: 100%;
+	border-top: 1px solid grey;
+}
+
+.footer-links {
+	width: 17%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding: 15px;
+	background-color: black;
+	font-family: 'Kanit', sans-serif;
+}
+
+.footer-links a, .footer-links h3 {
+	padding: 10px;
+}
+
+i {
+	font-size: 20px;
+	padding-right: 5px;
+}
