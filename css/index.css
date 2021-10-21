@@ -236,16 +236,16 @@ i {
 		width: 100%;
 		border: none;
 		position: relative;
-		top: -41px;
+		top: -40px;
 	
 	}
 
 	#mobile-container h1 {
 		margin: 0;
 		position: relative;
-		top: 100px;
+		top: 120px;
 		z-index: 300;
-		color: red;
+		color: white;
 		text-align: center;
 		
 	}
