@@ -263,9 +263,41 @@ i {
 		margin: 0 auto;
 	}
 
+	.movie-info {
+		text-align: center;
+		padding: 10px;
+	}
+
 	.movie-name {
 		text-align: center;
 		padding: 40px 0px 20px 0px;
 	}
+
+	.movie-desc {
+		padding: 10px;
+	}
+
+	.age-rating {
+		padding: 10px;
+	}
+
+	.empty-div {
+		display: none;
+	}
+
+	.footer-links {
+		width: 25%;
+		padding: 0px;
+		font-size: 10px;
+	}
+
+	.footer-links h3 {
+		padding: 5px;
+	}
+
+	.footer-links a {
+		padding: 5px;
+	}
+
 
 }
