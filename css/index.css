@@ -230,6 +230,7 @@ i {
 		background-image: url('/images/cinema-seats-min.png');
 		background-repeat: no-repeat;
 		background-size: 100%;
+		background-attachment: scroll !important;
 		
 	}
 
