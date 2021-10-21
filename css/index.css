@@ -231,17 +231,21 @@ i {
 	}
 
 	#mobile-container-img {
-		height: auto;
+		height: 100%;
 		width: 100%;
 		border: none;
+		position: relative;
+		top: -43px;
+	
 	}
 
 	#mobile-container h1 {
-		position: absolute;
-		top: 70%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		margin: 0;
+		position: relative;
+		top: 100px;
+		z-index: 300;
+		color: red;
+		text-align: center;
 		
 	}
 
