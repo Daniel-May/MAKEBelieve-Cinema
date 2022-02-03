@@ -11,15 +11,8 @@
   <!-- CSS SHEETS -->
   <link rel="stylesheet" type="text/css" href="css/index.css">
   
-  <!-- JAVASCRIPT & JQUERY -->
-  <!--<script src="javascript/jquery.js"></script> -->
-
-  <!-- ANGULAR -->
-  <script src="angular/angular.min.js"></script>
-  <script src="angular/apps/movieapp.js"></script>
-
-  <!-- FONTAWESOME CDN -->
-  <script src="https://kit.fontawesome.com/df81ab7113.js" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 </head>
 
@@ -48,16 +41,14 @@
   </header>
   
   <!-- MAIN -->
-  <div id="container">
-    <div id="carousel-wrapper">
-      <div id="carousel-inner">
-        <div>
-          <img src="images/cinema-seats.jpg" id="img1" class="active" alt="image showing cinema chairs and popcorn">
-          <h1>Take a Seat.</h1>
-        </div>
-        <div>
-          <img src="images/cinema-screen.jpg" id="img2" alt="image showing a cinema screen">
-        </div>
+  <div id="carousel-wrapper" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <img class="d-block w-100" src="images/cinema-seats.jpg" alt="First slide">
+        <h1>Take a Seat.</h1>
+      </div>
+      <div class="carousel-item" data-bs-interval="8000">
+        <img class="d-block w-100" src="images/cinema-screen.jpg" alt="Second slide">
       </div>
     </div>
   </div>
@@ -121,8 +112,25 @@
     <div class="footer-links empty-div"></div>
   </footer>
 
-  
-  <script src="javascript/index.js"></script>
+
+
+
+
+<!-- BOOTSTRAP -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JQUERY -->
+<script src="javascript/jquery.js"></script>
+
+<!-- ANGULAR -->
+<script src="angular/angular.min.js"></script>
+<script src="angular/apps/movieapp.js"></script>
+
+<!-- FONTAWESOME CDN -->
+<script src="https://kit.fontawesome.com/df81ab7113.js" crossorigin="anonymous"></script>
+
+<!-- JAVASCRIPT -->  
+<script src="javascript/index.js"></script>
   
 </body>
 </html>
