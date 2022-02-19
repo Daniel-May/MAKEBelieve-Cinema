@@ -90,6 +90,18 @@ a:hover {
 	margin: 0 auto;
 }
 
+.card {
+	position: absolute;
+	z-index: 7000;
+	width: 30%;
+	left: 5%;
+	top: 30%;
+}
+
+.card-title, .card-text {
+	color: black;
+}
+
 
 
 
