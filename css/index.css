@@ -96,13 +96,18 @@ a:hover {
 	width: 30%;
 	left: 5%;
 	top: 30%;
+	background-color: #201e1f;
+	border: 2px solid #FF6EC7;
 }
 
-.card-title, .card-text {
-	color: black;
+.card-header {
+	color: #FF6EC7;
 }
 
-
+.member-button {
+	border: 1px solid #FF6EC7;
+	color: #FF6EC7;
+}
 
 
 h1 {
