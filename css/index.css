@@ -261,19 +261,19 @@ i {
 		
 	}
 
-	#mobile-container > .card {
-			width: 80%;
-			background-color: #201e1f;
-			border: 2px solid #FF6EC7;
-			position:none;
-			top: 0;
-			left: 0;
-		
-	}
 
 	.section-header {
 		text-align: center;
 		padding: 40px 0px 60px 0px;
+	}
+
+	.mobile-card {
+		z-index: 0;
+		position: static;
+		width: 90%;
+		margin: 10% auto;
+		background-color: #201e1f;
+		border: 2px solid #FF6EC7;
 	}
 
 	.movie-showing {
